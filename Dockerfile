@@ -30,3 +30,9 @@ EXPOSE 80
 
 # 実行可能ファイルを実行
 CMD ["./server"]
+
+# タグをつける
+docker tag api-repository:latest 336291082587.dkr.ecr.ap-northeast-1.amazonaws.com/api-repository:latest
+
+# イメージをpush
+docker push 336291082587.dkr.ecr.ap-northeast-1.amazonaws.com/api-repository:latest
